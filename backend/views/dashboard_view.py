@@ -83,13 +83,13 @@ def show_dashboard_ui():
             fig.update_traces(
                 textinfo="percent+label",
                 textfont=dict(color=TEXT),
-                marker=dict(line=dict(color="white", width=2))
+                marker={"line": {"color":"white", "width":2}}
             )
 
             fig.update_layout(
                 paper_bgcolor="white",
                 plot_bgcolor="white",
-                font=dict(color=TEXT)
+                font = {'color' : TEXT}
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -118,7 +118,7 @@ def show_dashboard_ui():
             fig.update_layout(
                 paper_bgcolor="white",
                 plot_bgcolor="white",
-                font=dict(color=TEXT)
+                font={'color':TEXT}
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -144,14 +144,14 @@ def show_dashboard_ui():
 
         fig.update_traces(
             textinfo="percent+label",
-            textfont=dict(color=TEXT),
-            marker=dict(line=dict(color="white", width=2))
+            textfont= {'color':TEXT},
+            marker= {'line' : {'color' : "white", 'width' : 2}}
         )
 
         fig.update_layout(
             paper_bgcolor="white",
             plot_bgcolor="white",
-            font=dict(color=TEXT)
+            font= {'color':TEXT}
         )
 
         st.plotly_chart(fig, use_container_width=True)
@@ -185,7 +185,7 @@ def show_dashboard_ui():
             fig.update_layout(
                 paper_bgcolor="white",
                 plot_bgcolor="white",
-                font=dict(color=TEXT)
+                font={'color':TEXT}
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -212,14 +212,14 @@ def show_dashboard_ui():
                 color_discrete_sequence=[BLUE]
             )
 
-            fig.update_traces(line=dict(width=3))
+            fig.update_traces(line= {'width' : 3})
 
             fig.update_xaxes(type="category")
 
             fig.update_layout(
                 paper_bgcolor="white",
                 plot_bgcolor="white",
-                font=dict(color=TEXT)
+                font={'color':TEXT}
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -248,14 +248,14 @@ def show_dashboard_ui():
             color_discrete_sequence=[PURPLE]
         )
 
-        fig.update_traces(line=dict(width=3))
+        fig.update_traces(line={'width':3})
 
         fig.update_xaxes(type="category")
 
         fig.update_layout(
             paper_bgcolor="white",
             plot_bgcolor="white",
-            font=dict(color=TEXT)
+            font={'color':TEXT}
         )
 
         st.plotly_chart(fig, use_container_width=True)
