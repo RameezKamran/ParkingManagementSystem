@@ -1,9 +1,13 @@
 import oracledb
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def get_connection():
     conn = oracledb.connect(
-        user="parking_db",
-        password="pass123",
-        dsn="localhost/XEPDB1"
+        user= os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        dsn=os.getenv("DB_DSN")
     )
     return conn
