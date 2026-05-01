@@ -82,7 +82,7 @@ def show_dashboard_ui():
 
             fig.update_traces(
                 textinfo="percent+label",
-                textfont=dict(color=TEXT),
+                textfont= {'color' : TEXT},
                 marker={"line": {"color":"white", "width":2}}
             )
 
