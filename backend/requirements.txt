@@ -2,3 +2,4 @@ streamlit
 oracledb
 pandas
 plotly
+python-dotenv
